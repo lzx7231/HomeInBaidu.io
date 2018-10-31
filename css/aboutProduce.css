@@ -1,0 +1,618 @@
+/* *{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+} */
+
+body{
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+	padding: 15px 0 10px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+nav{
+	background: #f5f5f5;
+}
+
+.head, .guideTool, .section{
+	width: 1000px;
+	margin: 0 auto;
+	/* border: 1px solid #000; */
+}
+
+.head h1{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 5px 0 0;
+}
+
+.head h1 img{
+	vertical-align: baseline;
+}
+
+.head span{
+	display: inline-block;
+	text-align: center;
+	vertical-align: middle;
+}
+
+span.searchBox input{
+	width: 540px;
+	height: 34px;
+	outline: none;
+	padding: 0 5px;
+}
+
+span.btnSearch{
+	width: 100px;
+	height: 34px;
+	line-height: 34px;
+	color: #fff;
+	margin-left: -4px
+}
+
+span.btnSearch input{
+	border: 0;
+	width: 100%;
+	height: 100%;
+	background: #3385ff;
+	/* background: transparent; */
+}
+
+span.tips{
+	margin-left: 10px
+}
+
+.guideTool{
+	font: normal 13px/36px arial,"Sim Sun";
+}
+
+.guideTool .breadcrumb{
+	padding: 0;
+	margin: 0;
+}
+
+.guideTool .breadcrumb li.active::before{
+	content: '> '
+}
+
+.type h3{
+	font-weight: bold;
+	font-size: 14px;
+	font-family: arial,"Sim Sun";
+	color: #333;
+	margin: 30px 0 0 0 ;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.type h3 sup{
+	vertical-align: bottom;
+	font: normal 14px arial,"Sim Sun";
+    color: #fff;
+    padding-left: 2px;
+    vertical-align: top;
+    background-color: #f43d39;
+    margin-left: 6px;
+}
+
+.section .type>div{
+	box-sizing: content-box;
+	display: inline-block;
+	margin-right: 20px;
+	padding: 15px 0;
+	width: 225px;
+	height: 34px;
+	border-bottom: 1px solid #f3f3f3;
+}
+
+
+.type>div span{
+	color: #014cd2;
+	font-weight: bold;
+}
+
+.type>div span>a{
+	color: #014cd2;
+}
+
+.type>div span>p{
+	font-family: arial,"Sim Sun";
+	font-size: 12px;
+	font-weight: normal;
+	color: #666;
+}
+
+.type>div>a{
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
+	margin-right: 8px;
+}
+
+footer{
+	margin-top: 30px;
+	padding: 10px 0;
+	text-align: center;
+	background: #f8f8f8;
+	border-top: 1px solid #ebebeb;
+}
+
+
+@media (max-width: 1024px) {
+
+	.head, .guideTool, .section{
+		width: 100%;
+		padding: 0 10px;
+	}
+
+	.head span.searchBox{
+		width: 50%;
+	}
+
+	.head span.searchBox input{
+		width: 100%;
+	}
+}
+
+@media (max-width: 554px) {
+	.head {
+		display: table;
+	}
+
+	.head h1, span.searchBox, span.btnSearch, span.tips{
+		display: table-cell;
+		text-align: center
+	}
+	
+	.head h1 img{
+		width: 80px;
+	}
+
+	.head h1, span.tips{
+		padding: 0 5px;
+	}
+
+	span.btnSearch input{
+		padding: 0 10px;
+		height: 34px;
+	}
+	
+	span.tips{
+		width: 11%;
+	}
+}
+
+@media (max-width: 513px) {
+	.section .type>div{
+		width: 45%;
+		margin-right: 2%;
+	}
+
+	.section .item>a{
+		display: none
+	}
+}
+
+a.easySch{
+	background: url('../img/secr.gif') no-repeat
+}
+
+a.bear{
+	background: url('../img/more.png') no-repeat left -10250px
+}
+
+a.baipin{
+	background: url('../img/more.png') no-repeat left -10149px
+}
+
+a.haokan{
+	background: url('../img/more.png') no-repeat left -10216px
+}
+
+a.trust{
+	background: url('../img/more.png') no-repeat left -10080px
+}
+
+a.yingxiao{
+	background: url('../img/more.png') no-repeat left -10009px
+}
+
+a.tech{
+	background: url('../img/more.png') no-repeat left -9941px
+}
+
+a.rengongfanyi{
+	background: url('../img/more.png') no-repeat left -9735px
+}
+
+a.h5page{
+	background: url('../img/more.png') no-repeat left -1700px
+}
+
+a.shipin{
+	background: url('../img/more.png') no-repeat left -7016px
+}
+
+a.fanyi{
+	background: url('../img/more.png') no-repeat left -102px
+}
+
+a.music{
+	background: url('../img/more.png') no-repeat left -1020px
+}
+
+a.map{
+	background: url('../img/more.png') no-repeat left -6812px
+}
+
+a.news{
+	background: url('../img/more.png') no-repeat left -6914px
+}
+
+a.pic{
+	background: url('../img/more.png') no-repeat left -6948px
+}
+
+a.shitu{
+	background: url('../img/more.png') no-repeat left -4675px
+}
+
+a.taihemusic{
+	background: url('../img/taihemusician.gif') no-repeat center
+}
+
+a.caifu{
+	background: url('../img/more.png') no-repeat left -7186px
+}
+
+a.waimai{
+	background: url('../img/more.png') no-repeat left -5568px
+}
+
+a.chuanke{
+	background: url('../img/more.png') no-repeat left -6404px
+}
+
+a.xueshu{
+	background: url('../img/more.png') no-repeat left -6540px
+}
+
+a.zhuomian{
+	background: url('../img/more.png') no-repeat left -8172px
+}
+
+a.hao123{
+	background: url('../img/more.png') no-repeat left -4437px
+}
+
+a.daohang{
+	background: url('../img/more.png') no-repeat left -6846px
+}
+
+a.koubei{
+	background: url('../img/more.png') no-repeat left -5127px
+}
+
+a.quzheng{
+	background: url('../img/more.png') no-repeat left -9805px
+}
+
+a.baijiahao{
+	background: url('../img/more.png') no-repeat left -9598px
+}
+
+a.guangbo{
+	background: url('../img/more.png') no-repeat left -9496px
+}
+
+a.vrclub{
+	background: url('../img/more.png') no-repeat left -9462px
+}
+
+a.dumi{
+	background: url('../img/more.png') no-repeat left -9360px
+}
+
+a.anquanclub{
+	background: url('../img/anquan.png') no-repeat;
+	background-size: 24px 24px; 
+}
+
+a.wenku{
+	background: url('../img/more.png') no-repeat left -7050px
+}
+
+a.pan{
+	background: url('../img/more.png') no-repeat left -9701px
+}
+
+a.baike{
+	background: url('../img/more.png') no-repeat left -9975px
+}
+
+a.tieba{
+	background: url('../img/more.png') no-repeat left -6982px
+}
+
+a.zhidao{
+	background: url('../img/more.png') no-repeat left -7118px
+}
+
+a.jingyan{
+	background: url('../img/more.png') no-repeat left -6744px
+}
+
+a.gushitong{
+	background: url('../img/more.png') no-repeat left -7424px
+}
+
+a.qianbao{
+	background: url('../img/more.png') no-repeat left -4573px
+}
+
+a.yuedu{
+	background: url('../img/more.png') no-repeat left -7084px
+}
+
+a.travel{
+	background: url('../img/more.png') no-repeat left -6778px
+}
+
+a.zhongce{
+	background: url('../img/more.png') no-repeat left -3452px
+}
+
+a.jinrong{
+	background: url('../img/more.png') no-repeat left -5093px
+}
+
+a.clubzanzhu{
+	background: url('../img/more.png') no-repeat left -4777px
+}
+
+a.nuomi{
+	background: url('../img/more.png') no-repeat left -8070px
+}
+
+a.bbknows{
+	background: url('../img/more.png') no-repeat left -9326px
+}
+
+a.youke{
+	background: url('../img/more.png') no-repeat left -9292px
+}
+
+a.shouyou91{
+	background: url('../img/more.png') no-repeat left -8960px
+}
+
+a.youxi{
+	background: url('../img/more.png') no-repeat left -1904px
+}
+
+a.kaifazhe{
+	background: url('../img/more.png') no-repeat left -68px
+}
+
+a.baiduh5{
+	background: url('../img/more.png') no-repeat left -9394px
+}
+
+a.licai{
+	background: url('../img/more.png') no-repeat left -6112px
+}
+
+a.shurufa{
+	background: url('../img/more.png') no-repeat left -1326px
+}
+
+a.liulanqi{
+	background: url('../img/more.png') no-repeat left -2346px
+}
+
+a.shoujizhus{
+	background: url('../img/more.png') no-repeat left -3520px
+}
+
+a.motu{
+	background: url('../img/more.png') no-repeat left -6880px
+}
+
+a.baidufanyi{
+	background: url('../img/more.png') no-repeat left -7866px
+}
+
+a.mopai{
+	background: url('../img/more.png') no-repeat left -4098px
+}
+
+a.qianqian{
+	background: url('../img/qqyy.gif') no-repeat center
+}
+
+a.zuorenwu{
+	background: url('../img/more.png') no-repeat left -4301px
+}
+
+a.weishi{
+	background: url('../img/more.png') no-repeat left -4505px
+}
+
+a.baidujiaoyu{
+	background: url('../img/more.png') no-repeat left -4505px
+}
+
+a.lingxi{
+	background: url('../img/more.png') no-repeat left -9874px
+}
+
+a.lvshi{
+	background: url('../img/more.png') no-repeat left -9840px
+}
+
+a.baidubrain{
+	background: url('../img/more.png') no-repeat left -9770px
+}
+
+a.shangqiao{
+	background: url('../img/more.png') no-repeat left -9428px
+}
+
+a.tuijian{
+	background: url('../img/more.png') no-repeat left -6180px
+}
+
+a.sousuo{
+	background: url('../img/more.png') no-repeat left -1122px
+}
+
+a.zhanzhang{
+	background: url('../img/more.png') no-repeat left -2006px
+}
+
+a.tongji{
+	background: url('../img/more.png') no-repeat left -1496px
+}
+
+a.lianmeng{
+	background: url('../img/more.png') no-repeat left -1632px
+}
+
+a.tuiguang{
+	background: url('../img/more.png') no-repeat left -1598px
+}
+
+a.fengyunbang{
+	background: url('../img/more.png') no-repeat left -1530px
+}
+
+a.zhishu{
+	background: url('../img/more.png') no-repeat left -748px
+}
+
+a.yidongtongji{
+	background: url('../img/more.png') no-repeat left -2652px
+}
+
+a.sinan{
+	background: url('../img/more.png') no-repeat left -5263px
+}
+
+a.kaifacenter{
+	background: url('../img/more.png') no-repeat left -8280px
+}
+
+a.tujia{
+	background: url('../img/more.png') no-repeat left -5704px
+}
+
+a.yunguance{
+	background: url('../img/more.png') no-repeat left -5738px
+}
+
+a.fuwumarket{
+	background: url('../img/more.png') no-repeat left -5806px
+}
+
+
+a.yuqing{
+	background: url('../img/more.png') no-repeat left -7526px
+}
+
+a.jingsuan{
+	background: url('../img/more.png') no-repeat left -6044px
+}
+
+a.yunjiasu{
+	background: url('../img/more.png') no-repeat left -5942px
+}
+
+a.apistore{
+	background: url('../img/more.png') no-repeat left -6316px
+}
+
+a.baitong91{
+	background: url('../img/more.png') no-repeat left -7220px
+}
+
+a.baiduyun{
+	background: url('../img/more.png') no-repeat left -9667px
+}
+
+
+a.yuyin{
+	background: url('../img/more.png') no-repeat left -9062px
+}
+
+a.ssp{
+	background: url('../img/more.png') no-repeat left -7900px
+}
+
+a.tuisong{
+	background: url('../img/more.png') no-repeat left -8036px
+}
+
+
+a.yidongyunceshi{
+	background: url('../img/more.png') no-repeat left -8994px
+}
+
+a.naotu{
+	background: url('../img/more.png') no-repeat left -6146px
+}
+
+a.baiduyingyin{
+	background: url('../img/more.png') no-repeat left -170px
+}
+
+a.baiduliulanqi{
+	background: url('../img/more.png') no-repeat left -4539px
+}
+
+a.duhai{
+	background: url('../img/more.png') no-repeat left -3316px
+}
+
+
+a.baidushurufa{
+	background: url('../img/more.png') no-repeat left -9564px
+}
+
+a.shadu{
+	background: url('../img/more.png') no-repeat left -5161px
+}
+
+a.wubishurufa{
+	background: url('../img/more.png') no-repeat left -4811px
+}
+
+a.android{
+	background: url('../img/more.png') no-repeat left -8892px
+}
+
+a.menhu91{
+	background: url('../img/more.png') no-repeat left -8858px
+}
+
+a.yingxiaodaxue{
+	background: url('../img/more.png') no-repeat left -2856px
+}
+
+
+a.renzheng{
+	background: url('../img/more.png') no-repeat left -3282px
+}
+
+a.yingxiaoyanjiu{
+	background: url('../img/more.png') no-repeat left -4132px
+}
+
+
+
+
